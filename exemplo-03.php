@@ -1,7 +1,5 @@
 <?php
 
-
-
 $image=imagecreatefromjpeg("certificado.jpg");
 
 $titleColor = imagecolorallocate($image,0,0,0);
@@ -17,7 +15,7 @@ imagestring($image,3,440,370,utf8_decode("Concluído em: ") . date("d/m/y"),$tit
 
 //imagejpeg($image, "certificado-".date("Y-m-d").".jpg");
 
-header("Content-Type: image/jpeg");
+//header("Content-Type: image/jpeg");
 
 imagejpeg($image);
 
